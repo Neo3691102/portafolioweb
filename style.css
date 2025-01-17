@@ -79,6 +79,59 @@ h1 {
   font-size: 1.5rem;
 }
 
+/* experiencia */
+.experiencia i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.seccion-clara {
+  background-color: white;
+  color: black;
+}
+
+/* .experiencia .row div {
+  height: 250px;
+  background-color: purple;
+  border: 3px solid orange;
+} */
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
 /* mediaquery */
 @media screen and (max-width: 768px) {
   .navbar-brand {
