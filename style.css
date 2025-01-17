@@ -51,6 +51,34 @@ h1 {
   margin: 30px;
 }
 
+/* sobre mi */
+
+.seccion-oscura {
+  color: white;
+  background-color: black;
+}
+
+.seccion-sobremi {
+  height: 500px;
+  padding: 10px;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", serif;
+}
+
+.seccion-sobremi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+.seccion-parrafo {
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
 /* mediaquery */
 @media screen and (max-width: 768px) {
   .navbar-brand {
