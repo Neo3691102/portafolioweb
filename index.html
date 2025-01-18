@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -371,6 +371,96 @@
           Ver más articulos <i class="bi bi-arrow-right-circle-fill"></i>
         </button>
       </a>
+    </section>
+
+    <!--Testimonios-->
+    <section class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">
+        Estos son algunos testimonios de algunos compañeros
+      </h3>
+
+      <!-- carrusel -->
+      <div
+        id="testimonios-carrusel"
+        class="carousel carrusel-dark"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- Cliente 1 -->
+            <div class="container">
+              <img
+                class="testimonio-imagen rounded-circle"
+                src="/imagenes/cliente1.svg"
+                alt="cliente1"
+              />
+              <p class="testimonio-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                accusantium error laudantium velit provident magnam.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Gino</p>
+                <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Cliente 2 -->
+            <div class="container">
+              <img
+                class="testimonio-imagen rounded-circle"
+                src="/imagenes/cliente2.svg"
+                alt="cliente1"
+              />
+              <p class="testimonio-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                accusantium error laudantium velit provident magnam.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Nora</p>
+                <p class="cargo">Excompañera de academia de programacion</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Cliente 3 -->
+            <div class="container">
+              <img
+                class="testimonio-imagen rounded-circle"
+                src="/imagenes/cliente3.svg"
+                alt="cliente1"
+              />
+              <p class="testimonio-texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                accusantium error laudantium velit provident magnam.
+              </p>
+              <div class="testimonio-info">
+                <p class="cliente">Arthur</p>
+                <p class="cargo">Compañero de academia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonios-carrusel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonios-carrusel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
     </section>
 
     <script
