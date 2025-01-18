@@ -1,3 +1,25 @@
+.seccion-clara {
+  background-color: white;
+  color: black;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: black;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
 /* <!--navbar--> */
 .logo {
   width: 30px;
@@ -53,11 +75,6 @@ h1 {
 
 /* sobre mi */
 
-.seccion-oscura {
-  color: white;
-  background-color: black;
-}
-
 .seccion-sobremi {
   height: 500px;
   padding: 10px;
@@ -90,11 +107,6 @@ h1 {
 
 .experiencia {
   padding: 40px 40px 60px 40px;
-}
-
-.seccion-clara {
-  background-color: white;
-  color: black;
 }
 
 /* .experiencia .row div {
@@ -132,6 +144,64 @@ h1 {
   margin: 5px;
 }
 
+/* proyectos */
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2 ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
 /* mediaquery */
 @media screen and (max-width: 768px) {
   .navbar-brand {
@@ -142,5 +212,15 @@ h1 {
 @media screen and (min-width: 700px) {
   .hero-inferior-img {
     max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
   }
 }
