@@ -202,6 +202,21 @@ overlay p {
   margin: 10px;
 }
 
+/* Articulos */
+.articulos {
+  min-height: 500px;
+  padding: 30px;
+}
+
+.articulos .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px;
+}
+
+.articulos .card-header {
+  font-weight: bold;
+}
 /* mediaquery */
 @media screen and (max-width: 768px) {
   .navbar-brand {
