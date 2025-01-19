@@ -24,10 +24,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -54,16 +56,16 @@
             class="navbar-nav d-flex justify-content-center align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre mí</a>
+              <a class="nav-link" href="#sobre-mi">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonios</a>
+              <a class="nav-link" href="#testimonios">Testimonios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -93,7 +95,7 @@
     </section>
     <!--Hero end-->
     <!--Sobre mi-->
-    <section class="seccion-sobremi seccion-oscura">
+    <section id="sobre-mi" class="seccion-sobremi seccion-oscura">
       <div class="contenedor">
         <h2 class="seccion-titulo">Conoce a Nestor</h2>
         <p class="seccion-parrafo">
@@ -168,7 +170,10 @@
     </section>
 
     <!--Proyectos-->
-    <section class="proyectos-recientes seccion-clara d-flex flex-column">
+    <section
+      id="proyectos"
+      class="proyectos-recientes seccion-clara d-flex flex-column"
+    >
       <h1 class="seccion-titulo texto-negro">Mis proyectos recientes</h1>
       <h2 class="seccion-descripcion">
         Estos son algunos de los proyectos en los que he estado trabajando
@@ -374,7 +379,7 @@
     </section>
 
     <!--Testimonios-->
-    <section class="testimonios seccion-clara">
+    <section id="testimonios" class="testimonios seccion-clara">
       <h2 class="seccion-titulo">Testimonios</h2>
       <h3 class="seccion-descripcion">
         Estos son algunos testimonios de algunos compañeros
@@ -463,13 +468,14 @@
       </div>
     </section>
 
-    <section class="contacto seccion-oscura">
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
       <div class="container">
         <div
           class="container rectangulo text-center d-flex justify-content-evenly"
         >
           <div class="row">
-            <div class="col-12 col-md-4 seccion-titulo">!Hablemos¡</div>
+            <div class="col-12 col-md-4 seccion-titulo">¡Hablemos!</div>
             <div class="col-12 col-md-4 descripcion">
               Contactame para iniciar tu proyecto de desarrollo web y haré que
               tu vision se vuelva realidad
@@ -484,6 +490,46 @@
             </div>
           </div>
         </div>
+
+        <!-- Footer -->
+        <footer
+          class="seccion oscura d-flex flex-column align-items-center justify-content-center"
+        >
+          <img
+            class="footer-logo"
+            src="/imagenes/iconoblanco.svg"
+            alt="logoportafolio"
+          />
+          <p class="footer-texto text-center">
+            Aprendo y creo todos los días.<br />Creemos un proyecto juntos
+          </p>
+          <div
+            class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+          >
+            <a
+              href="https://www.linkedin.com/in/castanedanestor/"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Neo3691102" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+
+          <div class="derechos-autor">
+            Creado por Nestor Arturo Castañeda (2025) &#169;
+          </div>
+        </footer>
       </div>
     </section>
 

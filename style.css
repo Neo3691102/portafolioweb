@@ -148,6 +148,7 @@ h1 {
 .seccion-descripcion {
   font-size: 1.2rem;
   color: #584e4e;
+  margin: 40px;
 }
 
 .proyectos-recientes img {
@@ -313,6 +314,56 @@ overlay p {
   color: black;
 }
 
+/* footer */
+.footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin-top: 33px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "QuickSand", sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
 /* mediaquery */
 @media screen and (max-width: 768px) {
   .navbar-brand {
