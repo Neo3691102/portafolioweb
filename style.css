@@ -32,12 +32,27 @@
   top: 0;
   width: 100%;
   z-index: 100;
+  
+}
+
+.navbar-nav{
+  gap: 2rem;
 }
 
 .navbar-collapse {
   justify-content: space-between;
   align-items: center;
 }
+
+.nav-item{
+  font-weight: bold;
+}
+
+.nav-item:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease 0.2s;
+}
+
 
 /* hero */
 section {
@@ -119,11 +134,7 @@ h1 {
   top: 107px;
 }
 
-/* .experiencia .row div {
-  height: 250px;
-  background-color: purple;
-  border: 3px solid orange;
-} */
+
 .experiencia .columna {
   padding: 20px;
   border: 2px solid #8080804d;
