@@ -25,17 +25,16 @@
   width: 30px;
 }
 
-.navbar {
+#navbar {
   padding: 2rem;
   background-color: rgb(188, 210, 240);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
-  
 }
 
-.navbar-nav{
+#seccionesnav {
   gap: 2rem;
 }
 
@@ -44,15 +43,14 @@
   align-items: center;
 }
 
-.nav-item{
+.nav-item {
   font-weight: bold;
 }
 
-.nav-item:hover{
+.nav-item:hover {
   transform: scale(1.2);
   transition: 0.5s ease 0.2s;
 }
-
 
 /* hero */
 section {
@@ -133,7 +131,6 @@ h1 {
   position: relative;
   top: 107px;
 }
-
 
 .experiencia .columna {
   padding: 20px;
