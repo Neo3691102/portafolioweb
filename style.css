@@ -140,6 +140,7 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
   transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 
 .experiencia .columna:hover {
