@@ -53,6 +53,28 @@ main #introduccion p {
   width: 80%;
   text-align: justify;
 }
+main #introduccion #left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+main #introduccion #left:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+main #introduccion #next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+main #introduccion #next:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
 
 footer {
   position: absolute;

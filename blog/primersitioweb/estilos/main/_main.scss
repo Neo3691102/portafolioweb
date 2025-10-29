@@ -25,6 +25,27 @@ main{
             width: 80%;
             text-align: justify;
         }
-        
+        #left{
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        #left:hover{
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+        }
+        #next{
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        #next:hover{
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+        }
     }
 }
