@@ -83,6 +83,31 @@ footer {
   top: 80vh;
   background-color: #222222;
 }
+footer .redes-sociales {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer .redes-sociales a {
+  font-size: 30px;
+  color: white;
+  transition: all 0.3s ease;
+}
+footer .redes-sociales a:hover {
+  color: #314CB5;
+  transform: scale(1.2);
+}
+footer .derechos-autor {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
 
 * {
   margin: 0;
