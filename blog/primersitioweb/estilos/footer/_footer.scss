@@ -4,4 +4,30 @@ footer{
     height: 20vh;
     top: 80vh;
     background-color: #222222;
+    .redes-sociales{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        a{
+            font-size: 30px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        a:hover{
+            color: #314CB5;
+            transform: scale(1.2);
+        }
+    }
+
+    .derechos-autor{
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
 }
