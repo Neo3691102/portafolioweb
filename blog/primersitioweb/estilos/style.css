@@ -23,6 +23,10 @@ aside ul {
 aside ul li a {
   text-decoration: none;
 }
+aside ul li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 
 main {
   position: absolute;
