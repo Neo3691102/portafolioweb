@@ -1,7 +1,3 @@
-//articulos
-const articuloH = document.getElementById("herramientas");
-const articuloI = document.getElementById("introduccion");
-
 const botonNext = document.getElementById("next");
 const botonLeft = document.getElementById("left");
 
@@ -24,3 +20,7 @@ const cambiarArticulo = (idMostrar) => {
 botonNext.addEventListener("click", () => {
   cambiarArticulo("herramientas");
 });
+
+botonLeft.addEventListener("click", () => {
+  cambiarArticulo("introduccion");
+})
