@@ -3,7 +3,7 @@ const botonLeft = document.getElementById("left");
 
 const cambiarArticulo = (idMostrar) => {
   const articulos = document.querySelectorAll("article");
-
+  console.log(articulos);
   articulos.forEach(articulo => {
     if (articulo.id === idMostrar) {
       articulo.style.display = "flex";
@@ -18,9 +18,33 @@ const cambiarArticulo = (idMostrar) => {
 
 
 botonNext.addEventListener("click", () => {
-  cambiarArticulo("herramientas");
+  const articulos = document.querySelectorAll("article");
+  let artActual = "";
+
+  articulos.forEach(art => {
+    const estilo = window.getComputedStyle(art).display;
+    if (estilo === "flex") {
+      console.log(`Artículo visible: ${art.id}`);
+      artActual = art.id === "introduccion" ? "herramientas" : "introduccion";
+    }
+  });
+
+  console.log(`Siguiente artículo: ${artActual}`);
+  cambiarArticulo(artActual);
 });
 
 botonLeft.addEventListener("click", () => {
-  cambiarArticulo("introduccion");
-})
+  const articulos = document.querySelectorAll("article");
+  let artActual = "";
+
+  articulos.forEach(art => {
+    const estilo = window.getComputedStyle(art).display;
+    if (estilo === "flex") {
+      console.log(`Artículo visible: ${art.id}`);
+      artActual = art.id === "introduccion" ? "herramientas" : "introduccion";
+    }
+  });
+
+  console.log(`Siguiente artículo: ${artActual}`);
+  cambiarArticulo(artActual);
+});
