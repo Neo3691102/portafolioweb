@@ -76,6 +76,24 @@ main #herramientas p {
   width: 80%;
   text-align: justify;
 }
+main #pasos {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+}
+main #pasos img {
+  width: 80%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main #pasos p {
+  width: 80%;
+  text-align: justify;
+}
 main .arrows {
   width: 100%;
   position: absolute;
