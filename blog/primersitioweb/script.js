@@ -16,22 +16,25 @@ const cambiarArticulo = (idMostrar) => {
   });
 }
 
-
 botonNext.addEventListener("click", () => {
   const articulos = document.querySelectorAll("article");
   let artActual = "";
+  const orden = ["introduccion", "herramientas", "pasos"]; // orden deseado
 
   articulos.forEach(art => {
     const estilo = window.getComputedStyle(art).display;
     if (estilo === "flex") {
       console.log(`Artículo visible: ${art.id}`);
-      artActual = art.id === "introduccion" ? "herramientas" : "introduccion";
+      const indiceActual = orden.indexOf(art.id);
+      const siguienteIndice = (indiceActual + 1) % orden.length; // vuelve al primero al final
+      artActual = orden[siguienteIndice];
     }
   });
 
   console.log(`Siguiente artículo: ${artActual}`);
   cambiarArticulo(artActual);
 });
+
 
 botonLeft.addEventListener("click", () => {
   const articulos = document.querySelectorAll("article");
