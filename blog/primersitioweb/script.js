@@ -51,3 +51,9 @@ botonLeft.addEventListener("click", () => {
   console.log(`Siguiente artículo: ${artActual}`);
   cambiarArticulo(artActual);
 });
+
+const enlaceIntro = document.getElementById("enlaceintroduccion");
+
+enlaceIntro.addEventListener("click", () => {
+  cambiarArticulo("introduccion");
+});
