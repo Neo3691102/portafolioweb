@@ -53,7 +53,12 @@ botonLeft.addEventListener("click", () => {
 });
 
 const enlaceIntro = document.getElementById("enlaceintroduccion");
+const enlaceHerr = document.getElementById("enlaceherramientas");
 
 enlaceIntro.addEventListener("click", () => {
   cambiarArticulo("introduccion");
+});
+
+enlaceHerr.addEventListener("click", () => {
+  cambiarArticulo("herramientas");
 });
