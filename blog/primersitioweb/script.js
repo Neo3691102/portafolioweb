@@ -19,7 +19,7 @@ const cambiarArticulo = (idMostrar) => {
 botonNext.addEventListener("click", () => {
   const articulos = document.querySelectorAll("article");
   let artActual = "";
-  const orden = ["introduccion", "herramientas", "pasos"]; // orden deseado
+  const orden = ["introduccion", "herramientas", "pasos", "conclusion"]; // orden deseado
 
   articulos.forEach(art => {
     const estilo = window.getComputedStyle(art).display;
@@ -39,12 +39,15 @@ botonNext.addEventListener("click", () => {
 botonLeft.addEventListener("click", () => {
   const articulos = document.querySelectorAll("article");
   let artActual = "";
+  const orden = ["introduccion", "herramientas", "pasos", "conclusion"]; // orden deseado
 
   articulos.forEach(art => {
     const estilo = window.getComputedStyle(art).display;
     if (estilo === "flex") {
       console.log(`Artículo visible: ${art.id}`);
-      artActual = art.id === "introduccion" ? "herramientas" : "introduccion";
+      const indiceActual = orden.indexOf(art.id);
+      const siguienteIndice = (indiceActual + 1) % orden.length; // vuelve al primero al final
+      artActual = orden[siguienteIndice];
     }
   });
 
@@ -55,6 +58,7 @@ botonLeft.addEventListener("click", () => {
 const enlaceIntro = document.getElementById("enlaceintroduccion");
 const enlaceHerr = document.getElementById("enlaceherramientas");
 const enlacePasos = document.getElementById("enlacepasos");
+const conclusion = document.getElementById("conclusion");
 
 
 enlaceIntro.addEventListener("click", () => {
@@ -67,4 +71,8 @@ enlaceHerr.addEventListener("click", () => {
 
 enlacePasos.addEventListener("click", () => {
   cambiarArticulo("pasos");
+});
+
+conclusion.addEventListener("click", () => {
+  cambiarArticulo("conclusion");
 });
