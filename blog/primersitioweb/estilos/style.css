@@ -100,6 +100,26 @@ main #pasos ul {
   text-align: justify;
   list-style: none;
 }
+main #conclusion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  display: none;
+  align-items: center;
+  gap: 20px;
+}
+main #conclusion img {
+  width: 80%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main #conclusion p {
+  width: 80%;
+  text-align: Center;
+}
 main .arrows {
   width: 100%;
   position: absolute;
