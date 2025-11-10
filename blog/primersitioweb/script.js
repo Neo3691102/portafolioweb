@@ -46,12 +46,12 @@ botonLeft.addEventListener("click", () => {
     if (estilo === "flex") {
       console.log(`Artículo visible: ${art.id}`);
       const indiceActual = orden.indexOf(art.id);
-      const siguienteIndice = (indiceActual + 1) % orden.length; // vuelve al primero al final
-      artActual = orden[siguienteIndice];
+      const anteriorIndice = (indiceActual - 1 + orden.length) % orden.length; // retrocede y vuelve al último si está en el primero
+      artActual = orden[anteriorIndice];
     }
   });
 
-  console.log(`Siguiente artículo: ${artActual}`);
+  console.log(`Artículo anterior: ${artActual}`);
   cambiarArticulo(artActual);
 });
 
