@@ -58,7 +58,7 @@ botonLeft.addEventListener("click", () => {
 const enlaceIntro = document.getElementById("enlaceintroduccion");
 const enlaceHerr = document.getElementById("enlaceherramientas");
 const enlacePasos = document.getElementById("enlacepasos");
-const conclusion = document.getElementById("conclusion");
+const enlaceconclusion = document.getElementById("conclusion");
 
 
 enlaceIntro.addEventListener("click", () => {
@@ -73,6 +73,6 @@ enlacePasos.addEventListener("click", () => {
   cambiarArticulo("pasos");
 });
 
-conclusion.addEventListener("click", () => {
+enlaceconclusion.addEventListener("click", () => {
   cambiarArticulo("conclusion");
 });
