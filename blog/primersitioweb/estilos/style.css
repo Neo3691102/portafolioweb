@@ -5,6 +5,12 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 9px;
+    text-align: center;
+  }
+}
 
 aside {
   position: absolute;
@@ -26,6 +32,14 @@ aside ul li a {
 aside ul li:hover {
   transform: scale(1.1);
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 480px) {
+  aside {
+    left: 0;
+    top: 12vh;
+    width: 100%;
+    height: auto;
+  }
 }
 
 main {
@@ -147,6 +161,13 @@ main .arrows #next:hover {
   transform: scale(1.2);
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 480px) {
+  main {
+    top: 36vh;
+    width: 100%;
+    height: auto;
+  }
+}
 
 footer {
   position: absolute;
@@ -179,6 +200,11 @@ footer .derechos-autor {
   width: 100%;
   text-align: center;
   font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    top: 150vh;
+  }
 }
 
 * {

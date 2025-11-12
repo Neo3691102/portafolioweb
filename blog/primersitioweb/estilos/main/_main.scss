@@ -128,4 +128,10 @@ main{
             transition: all 0.3s ease;
             }
         }
+
+        @media screen and (max-width: 480px){
+        top: 36vh;
+        width: 100%;
+        height: auto;
+        }
 }
