@@ -146,6 +146,12 @@ main .arrows #left {
   font-size: 40px;
   cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+  main .arrows #left {
+    left: 5px;
+    font-size: 30px;
+  }
+}
 main .arrows #left:hover {
   transform: scale(1.2);
   transition: all 0.3s ease;
@@ -156,6 +162,8 @@ main .arrows #next {
   right: 20px;
   font-size: 40px;
   cursor: pointer;
+  right: 5px;
+  font-size: 30px;
 }
 main .arrows #next:hover {
   transform: scale(1.2);
